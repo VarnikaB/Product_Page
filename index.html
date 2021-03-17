@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SHOPSKY | Online Shopping</title>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body >
+        <!-- Header-->
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	        <a href="index.php" class="navbar-brand text-center ml-auto col-lg-4 col-sm-3" href="#" data-abc="true" ><strong>Shopsky</strong></a> 
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-toggle" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
+	          <form class="input-group form-inline my-2 my-lg-0"> 
+	            <input class="form-control col-lg-6" type="text" placeholder="Search"> 
+	            <div class="input-group-append"><button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button></div>
+	            
+	          </form>
+	          <div class="navbar-nav" >
+	            <a class="nav-item nav-link" href="signup.php" data-toggle="tooltip" data-placement="bottom" title="Login"><i class="fa fa-user"></i></a>
+	            <a class="nav-item nav-link" href="cart.php" data-toggle="tooltip" data-placement="bottom" title="Shopping Cart"><i class="fa fa-shopping-cart">&nbsp;</i></a>
+				  <a class="nav-item nav-link" href="success.php" data-toggle="tooltip" data-placement="bottom" title="Orders"><i class="fa fa-shopping-bag"></i></a>
+	          </div>
+	        </div>
+		</nav>
+		<script>
+		$(document).ready(function(){
+		  $('[data-toggle="tooltip"]').tooltip();   
+		});
+		</script>
+		<nav class="navbar navbar-expand-lg navbar-dark py-0 bg-dark px-lg-2">			
+				<div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
+					<ul class="navbar-center navbar-nav list-unstyled" style="width:100%;text-align:center">
+						<li><a class="nav-item nav-link pl-lg-5 " href="#">Men Clothing</a></li>
+						<li><a class="nav-item nav-link pl-lg-5 " href="#">Women Clothing</a></li>
+						<li><a class="nav-item nav-link pl-lg-5 " href="#">Kids Clothing</a></li>
+				   </ul>
+			   </div>
+		</nav>
+        
+        <!-- Content -->
+        <div class="container-fluid">
+
+            <div class="single_product">
+                <div class="container-fluid" >
+                    <div class="row">
+                        <div class="col-lg-2 order-lg-1 order-2">
+                            <ul class="image_list">
+                                <li data-image="https://i.imgur.com/21EYMGD.jpg"><img src="https://i.imgur.com/21EYMGD.jpg" alt="" onclick="changeImage(1)" style="min-height: 25px;"></li>
+                                <li data-image="https://i.imgur.com/DPWSNWd.jpg"><img src="https://i.imgur.com/DPWSNWd.jpg" alt="" onclick="changeImage(2)"></li>
+                                <li data-image="https://i.imgur.com/HkEiXfn.jpg"><img src="https://i.imgur.com/HkEiXfn.jpg" alt="" onclick="changeImage(3)"></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 order-lg-2 order-1" style="padding-bottom: 2em;">
+                            <div class="image_selected" ><img src="https://i.imgur.com/qEwct2O.jpg" alt="" id="main" width="500"></div>
+                        </div>
+                        <script>
+									 
+                            function changeImage(im) {
+                                var image = document.getElementById('main');
+                                if(im==1)
+                                image.src = 'https://i.imgur.com/21EYMGD.jpg';
+                                if(im==2)
+                                image.src = 'https://i.imgur.com/DPWSNWd.jpg';
+                                if(im==3)
+                                image.src = 'https://i.imgur.com/HkEiXfn.jpg';
+                            }
+                            </script>
+                        <div class="col-lg-6 order-3">
+                            <div class="product_description">
+                                <div class="product_name">Acer Aspire 3 Celeron Dual Core - (2 GB/500 GB HDD/Windows 10 Home) A315-33 Laptop (15.6 inch, Black, 2.1 kg)</div>
+                                <div class="product-rating"><span class="badge badge-success"><i class="fa fa-star"></i> 4.5 Star</span> <span class="rating-review">35 Ratings & 45 Reviews</span></div>
+                                <div> <span class="product_price">₹ 29,000</span> <strike class="product_discount"> <span style='color:black'>₹ 2,000<span> </strike> </div>
+                                <div> <span class="product_saved">You Saved:</span> <span style='color:black'>₹ 2,000<span> </div>
+                                <hr class="singleline">
+                                <div> <span class="product_info">EMI starts at ₹ 2,000. No Cost EMI Available<span><br> <span class="product_info">Warranty: 6 months warranty<span><br> <span class="product_info">7 Days easy return policy<span><br> <span class="product_info">7 Days easy return policy<span><br> <span class="product_info">In Stock: 25 units sold this week<span> </div>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="br-dashed">
+                                                <div class="row">
+                                                    <div class="col-md-3 col-xs-3"> <img src="https://img.icons8.com/color/48/000000/price-tag.png"> </div>
+                                                    <div class="col-md-9 col-xs-9">
+                                                        <div class="pr-info"> <span class="break-all">Get 5% instant discount + 10X rewards @ RENTOPC</span> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7"> </div>
+                                    </div>
+                                    <div class="row" style="margin-top: 15px;">
+                                        <div class="col-xs-6" style="margin-left: 15px;"> <span class="product_options">RAM Options</span><br> <button class="btn btn-primary btn-sm">4 GB</button> <button class="btn btn-primary btn-sm">8 GB</button> <button class="btn btn-primary btn-sm">16 GB</button> </div>
+                                        <div class="col-xs-6" style="margin-left: 55px;"> <span class="product_options">Storage Options</span><br> <button class="btn btn-primary btn-sm">500 GB</button> <button class="btn btn-primary btn-sm">1 TB</button> </div>
+                                    </div>
+                                </div>
+                                <hr class="singleline">
+                                <div class="order_info d-flex flex-row">
+                                    <form action="#">
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6" style="margin-left: 13px;">
+                                        <div class="product_quantity"> <span><strong>QTY:</strong></span> <input id="quantity_input" type="number" min="1" >
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6"> <button type="button" class="btn btn-warning shop-button">Add to Cart</button> <button type="button" class="btn btn-success shop-button">Buy Now</button>
+                                        <div class="product_fav"><i class="fa fa-heart" style="color:red;"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-underline">
+                        <div class="col-md-6"> <span class=" deal-text">Other Offers</span> </div>
+                        <div class="col-md-6"> <a href="#" data-abc="true"> <span class="ml-auto view-all"></span> </a> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="row padding-2">
+                                <div class="col-md-5 padding-0">
+                                    <div class="bbb_combo">
+                                        <div class="bbb_combo_image"><img class="bbb_combo_image" src="https://i.imgur.com/K4b71NV.jpg" alt=""></div>
+                                        <div class="d-flex flex-row justify-content-start"> <strike style="color:red;"> <span class="fs-10" style="color:black;">₹ 18,000<span> </span></span></strike> <span class="ml-auto"><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i></span> </div>
+                                        <div class="d-flex flex-row justify-content-start" style=" margin-bottom: 13px; "> <span style="margin-top: -4px;">₹12,000</span> <span class="ml-auto fs-10">23 Reviews</span> </div> <span>Acer laptop with 10GB RAM + 500 GB Hard Disk</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 text-center"> <span class="step">+</span> </div>
+                                <div class="col-md-5 padding-0">
+                                    <div class="bbb_combo">
+                                        <div class="bbb_combo_image"><img class="bbb_combo_image" src="https://i.imgur.com/K4b71NV.jpg" alt=""></div>
+                                        <div class="d-flex flex-row justify-content-start"> <strike style="color:red;"> <span class="fs-10" style="color:black;">₹ 18,000<span> </span></span></strike> <span class="ml-auto"><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i></span> </div>
+                                        <div class="d-flex flex-row justify-content-start" style=" margin-bottom: 13px; "> <span style="margin-top: -4px;">₹12,000</span> <span class="ml-auto fs-10">23 Reviews</span> </div> <span>Acer laptop with 10GB RAM + 500 GB Hard Disk</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12" style="margin-left: 36px;">
+                                    <div class="boxo-pricing-items">
+                                        
+                                        <div class="combo-pricing-item"> <span class="items_text">Total: &nbsp;<span class="combo_item_price">₹13,700</span></span> </div>
+                                        <div class="add-both-cart-button"> <button type="button" class="btn btn-warning shop-button">Add to Cart</button> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center"> <span class="vertical-line"></span> </div>
+                        <div class="col-md-5" style=" margin-left: -27px;">
+                            <div class="row padding-2">
+                                <div class="col-md-5 padding-0">
+                                    <div class="bbb_combo">
+                                        <div class="bbb_combo_image"><img class="bbb_combo_image" src="https://i.imgur.com/K4b71NV.jpg" alt=""></div>
+                                        <div class="d-flex flex-row justify-content-start"> <strike style="color:red;"> <span class="fs-10" style="color:black;">₹ 18,000<span> </span></span></strike> <span class="ml-auto"><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating p-rating"></i><i class="fa fa-star p-rating"></i></span> </div>
+                                        <div class="d-flex flex-row justify-content-start" style=" margin-bottom: 13px; "> <span style="margin-top: -4px;">₹12,000</span> <span class="ml-auto fs-10">23 Reviews</span> </div> <span>Acer laptop with 10GB RAM + 500 GB Hard Disk</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 text-center"> <span class="step">+</span> </div>
+                                <div class="col-md-5 padding-0">
+                                    <div class="bbb_combo">
+                                        <div class="bbb_combo_image"><img class="bbb_combo_image" src="https://i.imgur.com/K4b71NV.jpg" alt=""></div>
+                                        <div class="d-flex flex-row justify-content-start"> <strike style="color:red;"> <span class="fs-10" style="color:black;">₹ 18,000<span> </span></span></strike> <span class="ml-auto"><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i><i class="fa fa-star p-rating"></i></span> </div>
+                                        <div class="d-flex flex-row justify-content-start" style=" margin-bottom: 13px; "> <span style="margin-top: -4px;">₹12,000</span> <span class="ml-auto fs-10">23 Reviews</span> </div> <span>Acer laptop with 10GB RAM + 500 GB Hard Disk</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12" style="margin-left: 36px;">
+                                    <div class="boxo-pricing-items">
+                                        
+                                        <div class="combo-pricing-item"> <span class="items_text">Total: &nbsp;<span class="combo_item_price">₹13,700</span></span> </div>
+                                        <div class="add-both-cart-button"> <button type="button" class="btn btn-warning shop-button">Add to Cart</button> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-underline">
+                        <div class="col-md-6"> <span class=" deal-text">Specifications</span> </div>
+                        <div class="col-md-6"> <a href="#" data-abc="true"> <span class="ml-auto view-all"></span> </a> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="col-md-12">
+                                <tbody>
+                                    <tr class="row mt-10">
+                                        <td class="col-md-4"><span class="p_specification">Sales Package :</span> </td>
+                                        <td class="col-md-8">
+                                            <ul>
+                                                <li>2 in 1 Laptop, Power Adaptor, Active Stylus Pen, User Guide, Warranty Documents</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="row mt-10">
+                                        <td class="col-md-4"><span class="p_specification">Model Number :</span> </td>
+                                        <td class="col-md-8">
+                                            <ul>
+                                                <li> 14-dh0107TU </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="row mt-10">
+                                        <td class="col-md-4"><span class="p_specification">Part Number :</span> </td>
+                                        <td class="col-md-8">
+                                            <ul>
+                                                <li>7AL87PA</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="row mt-10">
+                                        <td class="col-md-4"><span class="p_specification">Color :</span> </td>
+                                        <td class="col-md-8">
+                                            <ul>
+                                                <li>Black</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="row mt-10">
+                                        <td class="col-md-4"><span class="p_specification">Suitable for :</span> </td>
+                                        <td class="col-md-8">
+                                            <ul>
+                                                <li>Processing & Multitasking</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="row mt-10">
+                                        <td class="col-md-4"><span class="p_specification">Processor Brand :</span> </td>
+                                        <td class="col-md-8">
+                                            <ul>
+                                                <li>Intel</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Customer review-->
+        <div id="PLUS2" class="container user_box">
+            
+            <div id="customer_review " >
+                <span id="plus row">
+                    <h3 class="h3_ col-8"><strong>CUSTOMER REVIEWS</strong></h3> <hr>  
+                    <img src="Images/subtract.png" height="20" width="20" alt="" onclick="ToggleHide(event)" style="float: right;">
+                </span> 
+                          
+                <span >  
+                                   
+                    <span class="toggleclass">
+                    <i class="fa fa-star" aria-hidden="true" ></i>
+                    <i class="fa fa-star" aria-hidden="true" ></i>
+                    <i class="fa fa-star" aria-hidden="true" ></i>
+                    <i class="fa fa-star-o" aria-hidden="true" ></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i><br>
+                    <form >
+                        <div >
+                          <label for="exampleFormControlInput1"><b>Your Name</b></label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name" >
+                        </div>
+                        
+                        <div >
+                            <label for="exampleFormControlTextarea1"><b>Review</b></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div><br>
+                          <button type="submit" class="btn btn-dark mt-10">Submit Review</button>
+                      </form>
+                      </span>
+                      
+                    <!-- <button type="submit"  class="btn btn-primary" value="Submit">Submit Review</button> -->
+            </span>
+            
+            </div>
+            
+            <div id="reviews" class="toggleclass1">
+                <div class="bottomborder">
+
+                    <p class="p_"><b>Quality is good and it's perfect fit</b>
+                        <br>
+                        <i>Subham | <small>27 June 2020</small></i>
+                    </p>
+                </div>
+                <div class="bottomborder">
+
+                    <p class="p_"><b>Color is as good as it is shown</b>
+                        <br>
+                        <i>Priya | <small>17 May 2020</small></i>
+                    </p>
+                </div>
+                <div class="bottomborder">
+
+                    <p class="p_"><b>Fitting is very good and this look awesome</b>
+                        <br>
+                        <i>Akash | <small>14 January 2021</small></i>
+                    </p>
+                </div>
+                <div class="bottomborder">
+
+                    <p class="p_"><b>I am in love with this product</b>
+                        <br>
+                        <i>Mayank | <small>13 July 2019</small></i>
+                    </p>
+                </div>
+                <div class="bottomborder">
+                    <p class="p_"><b>It values for money</b>
+                        
+                        <br>
+                        <i>Keshav | <small>03 March 2020</small></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Recommended Section-->
+        <section class="pt-5 pb-5">
+            <div class="container-fluid">
+              <div class="row">
+                  <div class="col-6">
+                      <h3 class="mb-3"><strong>Recommended Section</strong></h3>
+                  </div>
+                  <div class="col-6 text-right">
+                      <a class="btn btn-dark mb-2 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                          <i class="fa fa-arrow-left"></i>
+                      </a>
+                      <a class="btn btn-dark mb-2 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                          <i class="fa fa-arrow-right" ></i>
+                      </a>
+                  </div>
+                  <div class="col-12">
+                      <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                  <div class="row">
+                                      <div class="col-md-4 col-sm-12 mb-3">
+                                          <div class="card shadow">
+                                              <div class="row">
+                                                <img class="img col-6" alt="100%x230" src="Images/laptop.png" width="150">
+                                                <div class="card-body col-6" >
+                                                    <h4 class="card-title">Lenovo laptop</h4>
+                                                    <p class="card-text">Price: &#8377; 31,000</p>          
+                                                </div>        
+                                                </div>  
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4 col-sm-12 mb-3">
+                                          <div class="card  shadow">
+                                            <div class="row">
+                                              <img class="img col-6" alt="100%x280" src="Images/laptop.png" width="150">
+                                              <div class="card-body col-6">
+                                                  <h4 class="card-title">Lenovo laptop</h4>
+                                                  <p class="card-text">Price: &#8377; 34,000</p>
+                                              </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4 col-sm-12 mb-3">
+                                          <div class="card shadow">
+                                            <div class="row">
+                                              <img class="img col-6" alt="100%x280" src="Images/laptop.png" width="150">
+                                              <div class="card-body col-6">
+                                                  <h4 class="card-title">Lenovo laptop</h4>
+                                                  <p class="card-text">Price: &#8377; 36,000</p>
+                                              </div>
+                                              </div>
+                                          </div>
+                                      </div>
+          
+                                  </div>
+                              </div>
+                              <div class="carousel-item">
+                                  <div class="row">
+          
+                                      <div class="col-md-4 col-sm-12 mb-3">
+                                          <div class="card shadow">
+                                            <div class="row">
+                                              <img class="img col-6" alt="100%x280" src="Images/laptop.png" width="150">
+                                              <div class="card-body col-6">
+                                                  <h4 class="card-title">Lenovo laptop</h4>
+                                                  <p class="card-text">Price: &#8377; 38,000</p>
+                                                </div>
+                                              </div>
+          
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4 col-sm-12 mb-3">
+                                          <div class="card shadow">
+                                            <div class="row">
+                                              <img class="img col-6" alt="100%x280" src="Images/laptop.png" width="150">
+                                              <div class="card-body col-6">
+                                                  <h4 class="card-title">Lenovo laptop</h4>
+                                                  <p class="card-text">Price: &#8377; 39,000</p>
+                                                    </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4 col-sm-12 mb-3">
+                                          <div class="card shadow">
+                                            <div class="row">
+                                              <img class="img col-6" alt="100%x280" src="Images/laptop.png" width="150">
+                                              <div class="card-body col-6">
+                                                  <h4 class="card-title">Lenovo laptop</h4>
+                                                  <p class="card-text">Price: &#8377; 30,000</p>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+          
+                                  </div>
+                              </div>
+                              <div class="carousel-item">
+                                  <div class="row">
+          
+                                      <div class="col-md-4 col-sm-12 mb-3">
+                                          <div class="card shadow">
+                                            <div class="row">
+                                              <img class="img col-6" alt="100%x280" src="Images/laptop.png" width="150">
+                                              <div class="card-body col-6">
+                                                  <h4 class="card-title">Lenovo laptop</h4>
+                                                  <p class="card-text">Price: &#8377; 33,000</p>
+                                                </div>
+                                              </div>
+          
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4 col-sm-12 mb-3">
+                                          <div class="card shadow">
+                                            <div class="row">
+                                              <img class="img col-6" alt="100%x280" src="Images/laptop.png" width="150">
+                                              <div class="card-body col-6">
+                                                  <h4 class="card-title">Lenovo laptop</h4>
+                                                  <p class="card-text">Price: &#8377; 35,000</p>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4 col-sm-12 mb-3">
+                                          <div class="card shadow">
+                                            <div class="row">
+                                              <img class="img col-6" alt="100%x280" src="Images/laptop.png" width="150">
+                                              <div class="card-body col-6">
+                                                  <h4 class="card-title">Lenovo laptop</h4>
+                                                  <p class="card-text">Price: &#8377; 31,000</p>
+                                              </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </section>
+          
+        <!-- Footer -->
+        <footer id="as-footer">
+            <div class="container" style="text-align: center;">
+                <div class="row upper">
+                    <div class="col-sm-6 col-md-2">
+                        <div class="as-footer-box mt-4">
+                            <h3 class="mt-3">About</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Feedback</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-2">
+                        <div class="as-footer-box mt-4">
+                            <h3 class="mt-3">Help</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Payments</a></li>
+                                <li><a href="#">Return</a></li>
+                                <li><a href="#">FAQ</a></li>
+                           </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-2">
+                        <div class="as-footer-box mt-4">
+                            <h3 class="mt-3">Policy</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Return Policy</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-2">
+                        <div class="as-footer-box mt-4">
+                            <h3 class="mt-3">Social</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="fa fa-linkedin" ></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="as-footer-box mt-4">
+                            <h3 class="mt-3">Make money with us</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Sell on Shopsky</a></li>
+                                <li><a href="#">Advertise Your Products</a></li>
+                                <li><a href="#">Become an Affliate</a></li>
+                                <li><a href="#"><i class="fa fa-android"></i>&nbsp;&nbsp;App Download</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="copyright text-center mt-4 ">
+                            <p>Online Shopping Site in India for Mobiles, Electronics, Computers, Accessories, Foods, Fashion, etc. Best Offers!</p>
+                            <p>Copyright  &copy; 2020 All rights reserved | <a href="https://www.shopsky.in" style="color: violet;">Shopsky India</a></p>
+                            
+                          </div>
+                       </div>
+                    </div>
+                
+                </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
